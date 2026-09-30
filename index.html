@@ -27,14 +27,14 @@
     <nav class="quick-nav" aria-label="포트폴리오 바로가기">
       <a href="#self">자기소개서 [PDF]</a>
       <a href="#design-docs">게임 기획서 [PDF]</a>
-      <a href="#tools">게임 기획 정보 및 자체 제작 밸런싱 툴 [URL]</a>
+      <a href="#tools">창작 게임 기획 정보 및 자체 제작 밸런싱 툴 [URL]</a>
       <button class="quick-nav-all" type="button" aria-pressed="false">전부 펼치기</button>
     </nav>
 
     <section class="content-groups" aria-label="포트폴리오 자료">
       <!-- SELF INTRO: opening this group reveals the PDF detail directly. -->
-      <section class="content-group is-collapsed" id="self">
-        <button class="group-toggle" type="button" aria-expanded="false">
+      <section class="content-group" id="self">
+        <button class="group-toggle" type="button" aria-expanded="true">
           <span class="group-badge">SELF<br>INTRO</span>
           <span class="group-copy">
             <strong>자기소개서 <em>[PDF]</em></strong>
@@ -42,7 +42,7 @@
           </span>
           <span class="group-chevron" aria-hidden="true"></span>
         </button>
-        <div class="group-panel direct-panel">
+        <div class="group-panel direct-panel is-open">
           <div class="portfolio-panel direct-detail-panel">
             <div class="cover"><img src="./assets/covers/00-intro.png" alt="자기소개서 표지"></div>
             <div class="detail">
@@ -140,7 +140,7 @@
         <button class="group-toggle" type="button" aria-expanded="false">
           <span class="group-badge">DEV<br>TOOL</span>
           <span class="group-copy">
-            <strong>게임 기획 정보 및 자체 제작 밸런싱 툴 <em>[URL]</em></strong>
+            <strong>창작 게임 기획 정보 및 자체 제작 밸런싱 툴 <em>[URL]</em></strong>
             <small>직접 제작한 게임의 기획 정보와 역기획한 콘텐츠 검증 및 밸런싱을 위한 자체 제작 툴입니다.</small>
           </span>
           <span class="group-chevron" aria-hidden="true"></span>
