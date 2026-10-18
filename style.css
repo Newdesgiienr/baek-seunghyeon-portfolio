@@ -88,3 +88,26 @@ footer{margin-top:18px;border-top:1px solid #ccd5e1;display:flex;justify-content
 .detail-line{display:block;white-space:nowrap}
 @media(max-width:1100px){.detail-line{white-space:normal}}
 
+
+
+/* Astrae Oratio CBT lab — illustrated link preview, styled to match other project covers. */
+.ao-preview{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;padding:22px 18px;text-align:center;color:#f7faff;
+  background:radial-gradient(circle at 70% 27%,rgba(116,150,216,.28),transparent 49%),linear-gradient(145deg,#0e1a30,#203654 60%,#121c30);
+  isolation:isolate;
+}
+.ao-preview:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:34px 34px;opacity:.42;
+}
+.ao-preview>span{position:relative;z-index:1}
+.ao-kicker{font-size:10px;letter-spacing:.24em;font-weight:900;color:#b6c6e4}
+.ao-mark{font-size:clamp(60px,7vw,90px);font-weight:900;letter-spacing:-.12em;line-height:.9;text-shadow:0 10px 26px rgba(0,0,0,.28);padding-right:.12em}
+.ao-title{font-size:22px;letter-spacing:.17em;font-weight:900;line-height:1}
+.ao-caption{font-size:9px;letter-spacing:.08em;color:#c3d0e8;font-weight:800}
+.ao-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+.ao-tags span{border:1px solid rgba(255,255,255,.27);border-radius:999px;padding:5px 9px;color:#e3eafd;font-size:9px;letter-spacing:.04em;font-weight:800}
+.ao-preview:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+@media(max-width:640px){.ao-mark{font-size:65px}.ao-title{font-size:20px}.ao-caption{font-size:8px}}
